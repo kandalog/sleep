@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+
 export default function Home() {
   return (
     <div className="max-w-[1200px] mx-auto">
@@ -19,35 +22,26 @@ export default function Home() {
           <div className="">
             <dt className="font-bold">記録日</dt>
             <dd>
-              <input
-                type="date"
-                className="border rounded px-2 py-1 text-sm mt-2"
-              />
+              <Input type="date" className="py-5 mt-2" />
             </dd>
           </div>
           <div className="mt-4">
             <dt className="font-bold">就寝時間</dt>
             <dd>
-              <input
-                type="time"
-                className="border rounded px-2 py-1 text-sm mt-2"
-              />
+              <Input type="time" className="py-5 mt-2" />
             </dd>
           </div>
           <div className="mt-4">
             <dt className="font-bold">起床時間</dt>
             <dd>
-              <input
-                type="time"
-                className="border rounded px-2 py-1 text-sm mt-2"
-              />
+              <Input type="time" className="py-5 mt-2" />
             </dd>
           </div>
         </dl>
         <div className="mt-4">
-          <button className="w-full bg-gray-500 text-white rounded py-4 font-bold cursor-pointer">
+          <Button className="w-full bg-gray-500 text-white rounded py-6 font-bold cursor-pointer">
             記録
-          </button>
+          </Button>
         </div>
       </form>
       {/* フォームエンド */}

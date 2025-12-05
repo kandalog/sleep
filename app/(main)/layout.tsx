@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="max-w-[1200px] mx-auto">{children}</div>;
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {children}
+    </div>
+  );
 }
